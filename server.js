@@ -13,8 +13,15 @@ app.get('/sam', (req, res) => {
 })
 
 app.get('/login', (req, res) => {
+    console.log("come in")
     res.send('login')
 })
+
+app.get('/register', (req, res) => {
+    console.log("come in")
+    res.send('register')
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })

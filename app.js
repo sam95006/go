@@ -22,11 +22,24 @@ function show_hide() {
     }
 }
 
+const log = console.log
+
 function testFetch() {
+
     fetch('http://localhost:3000/login')
-        .then(res => res.json())
-        .theb(data => {
+        .then(res => res.text())
+        .then(data => {
             console.log(data)
         })
 }
 testFetch()
+
+function register() {
+
+    fetch('http://localhost:3000/register')
+        .then(res => res.text())
+        .then(data => {
+            console.log(data)
+        })
+}
+register()
